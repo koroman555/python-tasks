@@ -5,7 +5,7 @@
 masyv = []
 N = 10
 for i in range(N):
-    if i == 2 or i == (N-2):
+    if i == 0 or i == (N-1):
         masyv.append(1)
     else:
         masyv.append(0)

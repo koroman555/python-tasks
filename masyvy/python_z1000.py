@@ -36,7 +36,7 @@ print("Приклад 3:", masyv)
 masyv = []
 s = 4
 f = 10
-for i in range(4,f+1):
+for i in range(s,f+1):
     masyv.append(i*i)
 
 print("Приклад 4:", masyv)

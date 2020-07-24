@@ -7,7 +7,7 @@ x = 1
 
 for i in range(0,N):
     masyv.append(x)
-    x = x + 3
+    x = x + 2
 
 print(masyv)
 

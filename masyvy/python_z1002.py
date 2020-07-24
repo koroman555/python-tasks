@@ -8,15 +8,15 @@
 masyv = []
 N = 10
 for i in range(0,N,2):
-    masyv.append(1)
     masyv.append(0)
+    masyv.append(1)
 print("Variant 1: ", masyv)
 
 # Variant 2
 
 masyv = []
 N = 10
-v = 1
+v = 0
 for i in range(0,N):
     masyv.append(v)
     if v == 0:
@@ -29,7 +29,7 @@ print("Variant 2: ", masyv)
 
 masyv = []
 N = 10
-masyv.append(1)
+masyv.append(0)
 for i in range(1,N):
     if masyv[i-1] == 0:
         masyv.append(1)
@@ -41,9 +41,9 @@ print("Variant 3: ", masyv)
 
 masyv = []
 N = 10
-masyv.append(1)
+masyv.append(0)
 for i in range(1,N):
-    if (i % 2) == 0:
+    if (i % 2) == 1:
         masyv.append(1)
     else:
         masyv.append(0)
