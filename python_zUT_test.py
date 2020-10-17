@@ -14,7 +14,12 @@ def generuvaty_masyv( n, min, max ):
             m.append(random.randint(min,max))
     return m
 
-# Найдіть кількість елементів масиву що не повторюються та виведіть їх
+# --- Завдання ---
+
+# Задано масив A
+# Ствроити масив В з елементів масиву A які не повторюються
+
+# --- Розвязок ---
 
 def опрацювати_масив(A):
     N = len(A)
@@ -29,10 +34,7 @@ def опрацювати_масив(A):
             B.append(A[j])
     return B
 
-N = 10
-masyv = generuvaty_masyv(N,1,10)
-print("Заданий масив:", masyv)
-print("Результуючий масив:",опрацювати_масив(masyv))
+# --- Перевірка ---
 
 class ТестуватиМасив(unittest.TestCase):
     def test1(self):
@@ -58,3 +60,10 @@ class ТестуватиМасив(unittest.TestCase):
             опрацювати_масив([2,2,1,3,4,3,7]),
             [1,4,7]
         )
+
+if __name__ == '__main__':
+    N = 10
+    masyv = generuvaty_masyv(N,1,10)
+    print("Заданий масив:", masyv)
+    print("Результуючий масив:",опрацювати_масив(masyv))
+    unittest.main()
